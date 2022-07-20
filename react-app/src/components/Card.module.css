@@ -1,0 +1,68 @@
+.container img {
+    width : 300px;
+    height: 230px;
+}
+
+@media screen and (max-width:768px) {
+    .container img {
+        width     : 100%;
+        object-fit: cover;
+        height    : auto;
+    }
+}
+
+.container {
+    margin          : 10px;
+    background-color: #ecec;
+    border-radius   : 10px;
+    overflow        : hidden;
+    box-shadow      : 5px 5px 10px rgb(189, 189, 189);
+    cursor          : pointer;
+}
+
+.container h3 {
+    color     : #696969;
+    margin    : 30px 20px 20px;
+    text-align: center;
+}
+
+.container p {
+    margin          : 0 auto;
+    margin-bottom   : 15px;
+    background-color: rgb(10, 145, 46);
+    width           : fit-content;
+    padding         : 5px;
+    border-radius   : 5px;
+    color           : white;
+    text-align      : center;
+}
+
+.counter {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    border-top     : 1px solid silver;
+}
+
+
+.counter img {
+    width : 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.counter span {
+    background-color: black;
+    padding         : 5px;
+    color           : white;
+    font-weight     : bold;
+    width           : 20px;
+    height          : 20px;
+    line-height     : 10px;
+    text-align      : center;
+}
+
+.deactive {
+    opacity: 0.3;
+}

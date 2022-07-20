@@ -1,0 +1,38 @@
+.container {
+    width   : 100%;
+    position: relative;
+}
+
+.container img {
+    width     : 100%;
+    height    : calc(100vh + 125px);
+    object-fit: cover;
+}
+
+.textContainer {
+    position: absolute;
+    top     : 90px;
+    left    : 70px;
+    color   : #696969;
+}
+
+@media screen and (max-width:768px) {
+    .textContainer {
+        text-align: center;
+        margin    : auto;
+    }
+}
+
+.container h1 {
+    padding-bottom: 25px;
+    font-size     : 5rem;
+}
+
+.container p {
+    font-size: 1.5rem;
+}
+
+.container span {
+    color      : #30ce04;
+    font-weight: bold;
+}

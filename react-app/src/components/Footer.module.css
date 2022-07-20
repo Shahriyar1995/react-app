@@ -1,0 +1,24 @@
+.container {
+    background-color: rgb(159, 159, 159);
+    height          : 50px;
+    text-align      : center;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        height    : 40px;
+        overflow-y: hidden;
+    }
+
+}
+
+.container p {
+    line-height: 50px;
+    font-weight: bold;
+}
+
+@media screen and (max-width) {
+    .container p {
+        line-height: 40px;
+    }
+}

@@ -1,0 +1,60 @@
+.container {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    text-align     : center;
+    gap            : 45px;
+    padding        : 50px;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 15px;
+    }
+
+}
+
+.container h3 {
+    font-size  : 3rem;
+    color      : #505050;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .container h3 {
+        font-size: 2.5rem;
+    }
+}
+
+.container div {
+    display        : flex;
+    justify-content: space-evenly;
+    align-items    : center;
+    margin-top     : 40px;
+}
+
+.container img {
+    width     : 300px;
+    object-fit: cover;
+}
+
+@media screen and (max-wdith:768px) {
+    .container img {
+        width: 100%;
+    }
+}
+
+.flex {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 25px;
+}
+
+@media screen and (max-width:768px) {
+    .flex {
+        flex-direction: column;
+        gap           : 100px;
+    }
+
+}
