@@ -11,44 +11,21 @@ class Card extends Component {
         super();
 
         this.state = {
-            counter: 1
+            counter: 1,
         }
     }
 
-
-
-
-
-    // downHandler = () => {
-    //     if (this.state.counter > 1) {
-    //         this.setState({
-    //             counter: this.state.counter - 1
-    //         })
-    //     }
-    // }
 
     downHandler = () => {
         if (this.state.counter > 1) {
             this.setState(prevState => ({
                 counter: prevState.counter - 1
             }))
-
         }
+
     }
 
 
-
-
-
-
-    // upHandler = () => {
-
-    //     if (this.state.counter < 9) {
-    //         this.setState({
-    //             counter: this.state.counter + 1
-    //         })
-    //     }
-    // }
 
     upHandler = () => {
         if (this.state.counter < 9) {
@@ -67,11 +44,15 @@ class Card extends Component {
         const { image, name, cost } = this.props;
         const { counter } = this.state;
 
+        const costNumber = parseInt(cost);
+        console.log(typeof (costNumber));
+
         return (
             <div className={styles.container}>
                 <img src={image} alt="iphones" />
                 <h3>{name}</h3>
-                <p>{cost}</p>
+                <p>{costNumber} $</p>
+                <p className={styles.total}>Total : {costNumber * counter} $</p>
 
                 <div className={styles.counter}>
                     <img className={counter == 1 ? styles.deactive : ""} src={down} alt="Coutner-dwon" onClick={this.downHandler} />

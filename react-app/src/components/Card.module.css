@@ -31,7 +31,18 @@
     margin-bottom   : 15px;
     background-color: rgb(10, 145, 46);
     width           : fit-content;
-    padding         : 5px;
+    padding         : 10px;
+    border-radius   : 5px;
+    color           : white;
+    text-align      : center;
+}
+
+.total {
+    margin          : 0 auto;
+    margin-bottom   : 15px;
+    background-color: rgb(31, 7, 165) !important;
+    width           : fit-content;
+    padding         : 10px;
     border-radius   : 5px;
     color           : white;
     text-align      : center;
