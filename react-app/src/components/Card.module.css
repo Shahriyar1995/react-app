@@ -29,7 +29,7 @@
 .container p {
     margin          : 0 auto;
     margin-bottom   : 15px;
-    background-color: rgb(10, 145, 46);
+    background-color: rgba(10, 145, 46, 0.85);
     width           : fit-content;
     padding         : 10px;
     border-radius   : 5px;
@@ -40,7 +40,7 @@
 .total {
     margin          : 0 auto;
     margin-bottom   : 15px;
-    background-color: rgb(31, 7, 165) !important;
+    background-color: rgba(31, 7, 165, 0.75) !important;
     width           : fit-content;
     padding         : 10px;
     border-radius   : 5px;
